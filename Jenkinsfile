@@ -37,8 +37,8 @@ pipeline {
 			
 		stage("Deploying to Rancher") {
 			steps {
-				sh 'sudo kubectl set image deployment/sweextracredit container-0=dheerajkrishna141/extra_credit:$BUILD_TIMESTAMP -n extracredit'
-				sh 'sudo kubectl rollout status deployment/sweextracredit -n extracredit'
+				sh 'kubectl set image deployment/sweextracredit container-0=dheerajkrishna141/extra_credit:$BUILD_TIMESTAMP -n extracredit'
+				sh 'kubectl rollout status deployment/sweextracredit -n extracredit'
 			}
 		}
 		
