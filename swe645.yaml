@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "swe645"
+  cluster:
+    server: "https://52.23.200.181/k8s/clusters/c-m-cksvbx9m"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2akNDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      GMwTmpNeQpOVGt3TURBZUZ3MHlOVEExTURRd01qTXhOREJhRncwek5UQTFNREl3TWpNeE5EQmFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE56UTJNekkxT1RBd01Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRVV2UlE2RmhQNWd4UwpnWGlSUDRQaysrQmlsaWtvMFM5YkFHZVN5U\
+      FV6eXFnZDFxNVlSWVlFZjdvaitJcWp4WUdwcXQxSHNXYkNRWW44CjV5Z1ppZlc4bmFOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGS\
+      E4vK3I1YUQ3Sm1HcUcvNnp4aWtGWWdLYjU5TUFvR0NDcUdTTTQ5QkFNQ0Ewa0FNRVlDSVFDMwpEa\
+      HRiZExXM3BoazZLR0ZKVC9MRTFDT2l3c09hcG5XWkJXMy9wMUFlSUFJaEFMcXZSd1U2UDV3Nm1Gb\
+      3JGQ3hFCjRaR0Q0bTVSN2JWa0wrVG50WnJtd2hhdAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "swe645"
+  user:
+    token: "kubeconfig-user-cmx45q6dnf:kfqdjccjvq26z6qgw8blx5k9w2hnzp8rcmb8cbbc592chtlsbpbjmp"
+
+
+contexts:
+- name: "swe645"
+  context:
+    user: "swe645"
+    cluster: "swe645"
+
+current-context: "swe645"
