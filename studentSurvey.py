@@ -17,7 +17,7 @@ app = FastAPI(lifespan= lifespan)
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the Student Survey API!"}
+    return {"message": "Hello, Welcome to the Student Survey API!"}
 
 @app.get("/api/survey/all")
 def get_all_surveys(session: Session = Depends(get_session)):
